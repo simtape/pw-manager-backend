@@ -32,4 +32,22 @@ public class Password {
 
     private WebsiteProfile websiteProfile;
     private Group group;
+
+    public Password(long id,
+    String title,
+                    String password,
+                    Group group,
+                    WebsiteProfile websiteProfile){
+        this.id = id;
+        this.title = title;
+        this.password = password;
+        this.used = false;
+        this.expired = false;
+        this.createdOn = Instant.now();
+        this.updatedOn = Instant.now();
+        this.expiresOn = Instant.now();
+        this.expiredOnActual = Instant.now();
+        this.websiteProfile = websiteProfile;
+        this.group = group;
+    }
 }

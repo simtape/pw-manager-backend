@@ -17,7 +17,7 @@ public class EditPasswordRequest {
     private String title;
 
     @NotBlank(message = "Description is mandatory")
-    private String description;
+    private String password;
 
     @NotNull
     private Priority priority;
